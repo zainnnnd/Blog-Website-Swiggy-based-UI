@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Account{% endblock %}
+{% block content %}
+<div class="container">
+    <h2>Account Details</h2>
+    <p>First Name: {{ user.first_name }}</p>
+    <p>Last Name: {{ user.last_name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Contact Number: {{ user.contact_number }}</p>
+    <a href="{{ url_for('update_details') }}" class="btn btn-primary">Update Details</a>
+</div>
+{% endblock %}
